@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modifier un patient</title>
+    <link rel="stylesheet" href="Gestion_cabine.css">
+    <link rel="icon" type="image/x-icon" href="trousse-de-premiers-secours.png">
+
+
+</head>
+<body>
+    <fieldset>
+    <legend>Modifier un patient</legend>
+    <form action="modifier.php" method="post">
+        <table>
+        <tr><td>CIN:</td> <td><input type="text" name="cin"></td></tr>
+        <tr><td>Nouveau nom: </td><td><input type="text" name="nouveau_nom"></td></tr>
+        <tr><td>Nouveau prenom: </td> <td><input type="text" name="nouveau_prenom"></td></tr>
+        <tr><td> Nouvelle date de naissance:</td> <td> <input type="date" name="nouvelle_date_nais"></td></tr>
+        <tr><td>Nouveau telephone:</td> <td><input type="text" name="nouveau_telephone"></td></tr>
+        <tr><td>Nouvelle adresse:</td> <td><input type="text" name="nouvelle_adresse"></td></tr>
+        <tr><td>Nouvelle date de rendez-vous: </td><td><input type="date" name="nouvelle_date_rendez"></td></tr>
+        <tr><td><input type="submit" value="Modifier"></td></tr>
+    </table>
+</form>
+</fieldset>
+</body>
+</html>

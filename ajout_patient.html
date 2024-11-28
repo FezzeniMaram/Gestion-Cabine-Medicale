@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>   
+    <link rel="stylesheet" href="Gestion_cabine.css">
+    <link rel="icon" type="image/x-icon" href="trousse-de-premiers-secours.png">
+</head>
+<body>
+    <form action="ajout_patient.php" method="post">
+        <fieldset>
+            <legend>Ajout patient</legend>
+        <table>
+            <tr><td> Cin: </td><td><input type="text" name="cin"></td></tr>
+            <tr><td> nom:</td><td><input  type="text" name="nom"></td></tr>
+            <tr><td> Prenom:</td><td><input  type="text" name="prenom"></td></tr>
+            <tr><td> Date de nassance:</td><td><input  type="date" name="date_nais"></td></tr>
+            <tr><td> Telephone:</td><td><input  type="text" name="telephone"></td></tr>
+            <tr><td> Adresse:</td><td><input type="adresse" name="adresse"></td></tr>
+            <tr><td> Rendez_vous:</td><td><input type="date" name="date_rendez"></td></tr>
+        </table>
+            <p><hr class="solid"></p>
+            <table>           
+                <tr><td></td><td>
+                    <input type="reset" value="Annuler">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="Ajouter"></td></tr>
+            </table>
+        </fieldset>
+    </form>
+</body>

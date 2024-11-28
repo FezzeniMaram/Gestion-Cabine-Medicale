@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page connexion</title>
+    <link rel="stylesheet" href="Gestion_cabine.css">
+    <link rel="icon" type="image/x-icon" href="health-checkup (1).png">
+    <script>
+        function verif() {
+            var a = document.getElementById("adresse");
+            if (a.value !== "maram.fezzeni@gmail.com") {
+                alert("adresse invalide");
+                a.focus();
+                return false;
+            }
+            var p = document.getElementById("password");
+            if (p.value !== "maram123") {
+                alert("Mot de passe invalide");
+                p.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<form action="Page_accueil.php" method="post" onsubmit="return verif()">
+    <fieldset style="max-width:500px;" class="center"> 
+        <legend>Page de Connexion</legend>
+        <table>
+            <tr><td> Adresse:</td><td><input id="adresse" type="adresse" name="adresse"></td></tr>
+            <tr><td>Mot de passe:</td><td><input id="password" type="password" name="password"></td></tr>
+        </table>
+        <p><hr class="solid"></p>
+        <table>
+            <tr><td></td><td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Annuler">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Envoyer">
+            </td></tr>
+        </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
